@@ -11,6 +11,6 @@ export default class Weather {
     this.kelvin = data.main.temp;
   }
   get weatherTemplate() {
-    return ` <div>${this.city}</div> <div>${this.kelvin}</div>`;
+    return `  <div class="flex-row">${this.city} <div>${this.kelvin}</div></div>`;
   }
 }

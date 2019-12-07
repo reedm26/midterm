@@ -14,7 +14,7 @@ class ImageService {
     let res = await imgApi.get("");
     store.commit("image", new Image(res.data));
     console.log(store.State.image);
-    debugger;
+    // debugger;
   }
 }
 
