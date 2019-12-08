@@ -8,9 +8,9 @@ export default class Weather {
     //      check out the other data that comes back and see if there is anything you want to try
 
     this.city = data.name;
-    this.kelvin = data.main.temp;
+    this.F = Math.round((data.main.temp * 9) / 5 - 459.67);
   }
   get weatherTemplate() {
-    return `  <div class="flex-row">${this.city} <div>${this.kelvin}</div></div>`;
+    return `  <div class="flex-row">${this.city} <div>${this.F}°</div></div>`;
   }
 }
