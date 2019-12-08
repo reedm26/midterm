@@ -25,7 +25,7 @@ export default class TodoController {
     try {
       await TodoService.addTodoAsync(todo);
     } catch (error) {
-      debugger;
+      // debugger;
       console.error("[ERROR]:", error);
     }
     form.reset();
@@ -36,7 +36,7 @@ export default class TodoController {
     try {
       await TodoService.toggleTodoStatusAsync(todoId);
     } catch (error) {
-      debugger;
+      // debugger;
       console.error("[ERROR]:", error);
     }
   }
