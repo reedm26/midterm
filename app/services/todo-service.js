@@ -19,6 +19,7 @@ class TodoService {
 
   async addTodoAsync(todo) {
     let res = await todoApi.post("", todo);
+    this.getTodos();
 
     //TODO Handle this response from the server (hint: what data comes back, do you want this?)
   }

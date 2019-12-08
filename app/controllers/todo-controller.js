@@ -19,6 +19,7 @@ export default class TodoController {
     e.preventDefault();
     var form = e.target;
     var todo = {
+      description: form.name.value
       //TODO build the todo object from the data that comes into this method
     };
     try {
