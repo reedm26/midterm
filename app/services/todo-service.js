@@ -2,7 +2,7 @@ import store from "../store.js";
 import Todo from "../models/todo.js";
 // @ts-ignore
 const todoApi = axios.create({
-  baseURL: "https://bcw-sandbox.herokuapp.com/api/jake/todos/",
+  baseURL: "https://bcw-sandbox.herokuapp.com/api/marcel/todos/",
   timeout: 8000
 });
 
@@ -35,6 +35,8 @@ class TodoService {
   }
 
   async removeTodoAsync(todoId) {
+    let res = await todoApi.delete(todoId);
+    this.getTodos();
     //TODO Work through this one on your own
     //		what is the request type
     //		once the response comes back, what do you need to insure happens?

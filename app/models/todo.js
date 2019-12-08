@@ -5,8 +5,8 @@ export default class Todo {
     this.id = data._id;
   }
   get todoTemplate() {
-    return `<li class="text-light">${this.desc}
-    <button class="btn-sm btn-danger" type="button" onclick="">x</button>
+    return `<li class="text-light"><input type="checkbox">   ${this.desc}
+       <button class="btn-sm btn-dark" type="button" onclick="app.todoController.removeTodo('${this.id}')">x</button>
     </li>
   `;
   }

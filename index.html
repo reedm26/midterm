@@ -35,18 +35,15 @@
 	</div>
 	
 	<div>
-		A Todo List
-		<div id="todo-error"></div>
 		
+		<div id="todo-error"></div>
 		
 		<div class="col-3 mt-3 pt-3 border bg-dark">
 			<h5 class="text-center text-light border-bottom">Todo</h5>
 				<ol id="todos">
 				</ol>
-					
-					<form onsubmit="app.todoController.addTodo(event)">
+					<form  class="mx-auto" onsubmit="app.todoController.addTodo(event)">
 						<div class="row form-group  justify-content-center">
-							
 							<div class="col-sm-1-6">
 								<input
 									type="text"
