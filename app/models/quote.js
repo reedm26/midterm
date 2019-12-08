@@ -6,7 +6,7 @@ export default class Quote {
   get quoteTemplate() {
     return `
   <h5>${this.author}</h5>
- <p>${this.body}</p> 
+ <p>"${this.body}"</p> 
  `;
   }
 }
