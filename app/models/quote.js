@@ -5,8 +5,11 @@ export default class Quote {
   }
   get quoteTemplate() {
     return `
-  <marquee>${this.author}</marquee>
- <p class="alert alert-dark" role="alert">"${this.body}"</p> 
+    <div class="alert alert-dark m-2"
+    <h5>${this.author}
+    <marquee role="alert">"${this.body}"</marquee> 
+    </h5>
+    </div>
  `;
   }
 }
