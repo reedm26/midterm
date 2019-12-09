@@ -6,7 +6,8 @@ export default class Todo {
   }
   get todoTemplate() {
     if (this.completed == false) {
-      return `<li class="text-light"> <input onclick="app.todoController.toggleTodoStatus('${this.id}')" type="checkbox">   ${this.desc}
+      return `<li class="text-light"> <input onclick="app.todoController.toggleTodoStatus('${this.id}')" type="checkbox">   
+      ${this.desc}
       <button class="btn-sm btn-dark" type="button" onclick="app.todoController.removeTodo('${this.id}')">x</button>
       </li>
       `;

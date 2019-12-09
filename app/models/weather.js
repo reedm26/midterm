@@ -11,7 +11,7 @@ export default class Weather {
     this.F = Math.round((data.main.temp * 9) / 5 - 459.67);
   }
   get weatherTemplate() {
-    return ` <div class="flex-row text-dark">${this.city} <h5>${this.F}°</h5></div><div class="sun"></div>`;
+    return ` <div class="flex-row text-dark"> ${this.city} <h5>${this.F}°</h5></div><div class="sun"></div>`;
     // if (this.F <= 48) {
     //   return `  <div class="flex-row">${this.city} <h5>${this.F}°</h5></div><divclass="cloud"></divclass="cloud">`;
     // } else {
