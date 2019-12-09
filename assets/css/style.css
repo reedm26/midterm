@@ -2,11 +2,12 @@
   color: red;
   font-size: 2em;
 }
-.bg-image {
-  height: auto;
-  width: auto;
+.bg-pic {
+  max-height: auto;
+  max-width: fill;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  flex-wrap: nowrap;
 }
 .bg-weather {
   color: rgb(163, 221, 245);
